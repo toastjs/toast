@@ -1,7 +1,7 @@
 {
   "name": "toast",
   "description": "Task-based command line installer for common projects",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/toastjs/toast",
   "author": {
     "name": "Stef van den Ham",
