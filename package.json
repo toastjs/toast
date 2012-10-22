@@ -1,0 +1,50 @@
+{
+  "name": "toast",
+  "description": "Task-based command line installer for common projects",
+  "version": "0.1.0",
+  "homepage": "https://github.com/toastjs/toast",
+  "author": {
+    "name": "Stef van den Ham",
+    "email": "stef@mindthecode.com",
+    "url": "@stefvdham"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/toastjs/toast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toastjs/toast/issues"
+  },
+  "dependencies": {
+    "grunt": "0.3.15",
+    "grunt-contrib": "0.1.7",
+    "grunt-jasmine-task": "0.2.2",
+    "requirejs": "2.0.6",
+    "handlebars": "1.0.6-2",
+    "express": "2.5.9",
+    "stylus": "0.29.0",
+    "nib": "0.8.2",
+    "cssom": "0.2.5",
+    "fs-extra" : "0.3.1",
+    "passthru" : "0.2.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.14"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "main": "grunt.js",
+  "bin": {
+    "toast": "bin/toast.js"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "readme": "Task-based command line installer for common projects and tasks.\n\n## License\nCopyright (c) 2012 Stef van den Ham (@stefvdham)  \nLicensed under the MIT license.\n",
+  "_id": "toastjs@0.1.0",
+  "_from": "toast"
+}
