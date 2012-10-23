@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 var grunt = require("grunt");
+var updater = require('../lib/plugins/updater.js');
 
 // Preload all custom tasks.
 grunt.npmTasks([
@@ -65,14 +66,17 @@ function displayHelp() {
   grunt.log.writeln();
 }
 
-// Immediately display help screen if no arguments.
-if (process.argv.length === 2) {
-  // Initialize task system so that the tasks can be listed.
-  grunt.task.init([], {help: true});
+var pkg = require(__dirname + "/../package.json");
+updater.getUpdate({ name: 'toast', version: pkg.version }, function( error, update ) {
+  // Immediately display help screen if no arguments.
+  if (process.argv.length === 2) {
+    // Initialize task system so that the tasks can be listed.
+    grunt.task.init([], {help: true});
 
-  // Do not proceed further.
-  return displayHelp();
-}
+    // Do not proceed further.
+    return displayHelp();
+  }
 
-// Otherwise, invoke the CLI.
-grunt.cli();
+  // Otherwise, invoke the CLI.
+  grunt.cli();
+});
