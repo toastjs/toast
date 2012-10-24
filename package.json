@@ -1,7 +1,7 @@
 {
   "name": "toast",
   "description": "Command-line installer for common projects and tasks based on Grunt.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/toastjs/toast",
   "author": {
     "name": "Stef van den Ham",
@@ -49,6 +49,6 @@
     "test": "grunt test"
   },
   "readme": "Command-line installer for common projects and tasks based on Grunt.\n\nQuickly start common projects by installing them through Toast. Use the grunt tasks that come with the project to test, build and distribute your projects more easily.\n\n## License\nCopyright (c) 2012 Stef van den Ham (@stefvdham)  \nLicensed under the MIT license.\n",
-  "_id": "toastjs@0.1.2",
+  "_id": "toastjs@0.1.3",
   "_from": "toast"
 }
