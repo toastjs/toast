@@ -4,7 +4,7 @@ var updater = require('../lib/plugins/updater.js');
 
 // Preload all custom tasks.
 grunt.npmTasks([
-  // Load grunt-contrib used for a majority of the tasks.
+  // Load grunt-contrib tasks used for a majority of the tasks.
   "grunt-contrib",
   // Load grunt-jasmine-task used for testing Jasmine.
   "grunt-jasmine-task",
