@@ -19,10 +19,6 @@ require('grunt').npmTasks([
   'toast'
 ]);
 
-// grunt.npmTasks(['grunt-contrib']);
-// grunt.loadNpmTasks('../node_modules/grunt-contrib');
-
-// Draw the help screen.
 function displayHelp() {
   var pkg = require(__dirname + "/../package.json");
   grunt.log.writeln();
