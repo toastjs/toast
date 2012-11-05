@@ -4,8 +4,17 @@ var updater = require('../lib/plugins/updater.js');
 
 // Preload all custom tasks.
 require('grunt').npmTasks([
-  'grunt-contrib/node_modules/grunt-contrib-coffee',
-  'grunt-contrib/node_modules/grunt-contrib-less',
+  "grunt-contrib-coffee",
+  "grunt-contrib-clean",
+  "grunt-contrib-compress",
+  "grunt-contrib-copy",
+  "grunt-contrib-handlebars",
+  "grunt-contrib-jst",
+  "grunt-contrib-less",
+  "grunt-contrib-mincss",
+  "grunt-contrib-requirejs",
+  "grunt-contrib-stylus",
+  "grunt-contrib-yuidoc",
   'grunt-jasmine-task',
   'toast'
 ]);
