@@ -3,16 +3,15 @@ var grunt = require("grunt");
 var updater = require('../lib/plugins/updater.js');
 
 // Preload all custom tasks.
-grunt.npmTasks([
-  // Load grunt-contrib tasks used for a majority of the tasks.
-  "grunt-contrib",
-  // Load grunt-jasmine-task used for testing Jasmine.
-  "grunt-jasmine-task",
-  // Load the remaining tasks (init/server/requirejs) from bbb.
-  "toast"
+require('grunt').npmTasks([
+  'grunt-contrib/node_modules/grunt-contrib-coffee',
+  'grunt-contrib/node_modules/grunt-contrib-less',
+  'grunt-jasmine-task',
+  'toast'
 ]);
 
-// grunt.loadTasks('tasks');
+// grunt.npmTasks(['grunt-contrib']);
+// grunt.loadNpmTasks('../node_modules/grunt-contrib');
 
 // Draw the help screen.
 function displayHelp() {
