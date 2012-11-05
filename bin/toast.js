@@ -15,7 +15,6 @@ require('grunt').npmTasks([
   "grunt-contrib-requirejs",
   "grunt-contrib-stylus",
   "grunt-contrib-yuidoc",
-  'grunt-jasmine-task',
   'toast'
 ]);
 
