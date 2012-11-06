@@ -8,7 +8,7 @@ require('grunt').npmTasks([
   "grunt-contrib-less",
   "grunt-contrib-clean",
   "grunt-jasmine-task",
-  // "grunt-contrib-compress",
+  "grunt-contrib-compress",
   // "grunt-contrib-copy",
   // "grunt-contrib-handlebars",
   // "grunt-contrib-jst",
